@@ -1,5 +1,4 @@
 {
-  "full_name": "Seaplane",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "seaplane_version": ""
 }
