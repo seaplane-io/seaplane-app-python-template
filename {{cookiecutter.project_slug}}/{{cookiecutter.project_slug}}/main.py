@@ -1,7 +1,6 @@
-from seaplane import app, task, log, start
-from seaplane.logging import SeaLogger
+from seaplane import app, task, config, start
 
-log.level(SeaLogger.DEBUG)
+config.set_api_key("sp-your_api_key")
 
 @task(type="compute", id='hello-world-task')
 def hello_world_task(data):
