@@ -107,10 +107,11 @@ Prerequisites:
 poetry install
 ```
 
-## Project Structure
+## Project Structure
 
-As any other Poetry project you need to follow a simple structure where your source files are under the project name folder.
+As any other Poetry project, you need to follow a simple structure where your source files are under the project name folder.
 
+```
 my_project_name
 ├── README.md
 ├── my_project_name
@@ -118,6 +119,7 @@ my_project_name
 ├── pyproject.toml
 └── tests
     └── __init__.py
+```
 
 ## Configure your API KEYS
 
