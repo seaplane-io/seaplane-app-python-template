@@ -136,7 +136,7 @@ curl -X GET -H "Authorization: Bearer ${TOKEN}" https://carrier.staging.cplane.d
 
 ## License
 
-Licensed under the Apache License, Version 2.0, [LICENSE]. Copyright 2022 Seaplane IO, Inc.
+Licensed under the Apache License, Version 2.0, [LICENSE].
 
 [//]: # (Links)
 
