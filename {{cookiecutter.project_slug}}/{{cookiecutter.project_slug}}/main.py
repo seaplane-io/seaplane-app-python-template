@@ -1,7 +1,6 @@
-from seaplane import app, config, start, task
+from seaplane import app, start, task
 
-config.set_api_key("sp-your_api_key")
-
+#Remember to add your SEAPLANE_API_KEY in .env file
 
 @task(type="compute", id="hello-world-task")
 def hello_world_task(data):
