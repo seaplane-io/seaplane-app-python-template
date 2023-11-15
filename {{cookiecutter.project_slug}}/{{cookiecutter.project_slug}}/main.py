@@ -1,4 +1,4 @@
-from seaplane import app, start, task
+from seaplane.apps import app, start, task
 
 #Remember to add your SEAPLANE_API_KEY in .env file
 
