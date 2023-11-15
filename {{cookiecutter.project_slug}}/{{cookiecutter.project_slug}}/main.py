@@ -1,4 +1,4 @@
-from seaplane import app, start, task
+from seaplane.apps import app, start, task
 
 #Remember to add your SEAPLANE_API_KEY in .env file
 
@@ -7,7 +7,7 @@ def hello_world_task(data):
     return "hello world"
 
 
-@app(id="hello-world-app", path="/hello")
+@app(id="hello-world-app")
 def hello_world_app(data):
     return hello_world_task(data)
 
