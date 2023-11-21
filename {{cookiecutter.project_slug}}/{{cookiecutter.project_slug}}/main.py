@@ -1,17 +1,43 @@
 from seaplane.apps import app, start, task
 
-#Remember to add your SEAPLANE_API_KEY in .env file
+# Remember to add your SEAPLANE_API_KEY in .env file
 
-@task(id="hello-world-task")
-def hello_world_task(context):
-    # This goes into the seaplane log
-    print(f"got context data {context.body}")
+# Uncomment the relevant application based on your Seaplane version. You can find out your Seaplane version by running seaplane --version in your CLI.
 
-    context.emit(b"hello world!")
+###################
+## Version 0.5.x ##
+###################
 
-@app(id="hello-world-app")
-def hello_world_app(data):
-    return hello_world_task(data)
+# @task()
+# def hello_world_task(context):
+#     # This goes into the seaplane log
+#     print(f"got context data {context.body}")
+
+#     context.emit(b"hello world!")
 
 
-start()
+# @app()
+# def hello_world_app(data):
+#     return hello_world_task(data)
+
+
+# start()
+
+###################
+## Version 0.4.0 ##
+###################
+
+# @task(id="hello-world-task", type="compute")
+# def hello_world_task(context):
+#     # This goes into the seaplane log
+#     print(f"got context data {context.body}")
+
+#     context.emit(b"hello world!")
+
+
+# @app(id="hello-world-app", path="/hello")
+# def hello_world_app(data):
+#     return hello_world_task(data)
+
+
+# start()
